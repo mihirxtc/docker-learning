@@ -5,7 +5,7 @@ FROM ubuntu:latest
 WORKDIR /app
 
 # copy the files from the host file system to the image file system
-COPY ./app
+COPY . /app
 
 # install the necessary packages
 RUN apt-get update && apt-get install -y nodejs
